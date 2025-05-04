@@ -1,0 +1,43 @@
+{
+  "name": "smart-config-loader", 
+  "version": "0.1.0", 
+  "description": "Loads and merges configuration from .env, environment-specific .env files, and system environment variables.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "dev": "ts-node examples/basic-usage.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/smart-config-loader.git" 
+  },
+  "keywords": [
+    "config",
+    "configuration",
+    "env",
+    "dotenv",
+    "environment",
+    "variables",
+    "node",
+    "typescript"
+  ],
+  "author": "Michael Ngiri <michaelngiri@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0" 
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/dotenv": "^8.2.0", 
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0" 
+  }
+}
